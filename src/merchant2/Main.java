@@ -28,10 +28,7 @@ public class Main {
             cities.add(new City(randomNum(min,max), randomNum(min,max), i));
         }
         
-        //List<City> path = new ArrayList<>();
-        //path = c.Compute(cities);
         c.Compute(cities);
-        //System.out.println("Fastest route is: " + path.toString());
         System.out.println("Total distance is: " + c.totalDistance);
     }
     

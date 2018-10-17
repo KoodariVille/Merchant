@@ -34,7 +34,6 @@ public class Calculate {
         }
         v = Greedy(path.get(0).destinations);
         list.remove(v);
-        //path.add(v);
         pathS += v + "-> ";
         totalDistance += v.distance;
         
@@ -45,14 +44,11 @@ public class Calculate {
             }
             v = Greedy(v.destinations);
             list.remove(v);
-            //path.add(v);
             pathS += v + "-> ";
             totalDistance += v.distance;
         }       
-        //System.out.println(v.toString());
-        //return pathS;
+
         System.out.println(pathS);
-        //return path;
     }
     
     public City Greedy(List<City> list){
