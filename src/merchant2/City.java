@@ -1,17 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package merchant2;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author User
- */
 public class City {
     private int x, y;
     public String name;
@@ -59,6 +50,7 @@ public class City {
         return Math.round(distance);
     }
     
+    @Override
     public String toString(){
         return name;
     }
